@@ -45,7 +45,7 @@ var pinyins []string = []string{
 	"nt",
 }
 
-func nwm(text string) (int, error) {
+func Test(text string) (int, error) {
 	var num int8 = 0
 
 	// GOCC

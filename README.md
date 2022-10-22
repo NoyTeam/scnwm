@@ -7,7 +7,7 @@
 ## Install
 
 ```
-go get github.com/NoyTeam/scnwm@v1.0.0
+go get github.com/NoyTeam/scnwm@v1.0.2
 ```
 
 ## Use
@@ -22,7 +22,7 @@ import (
 )
 
 func main() {
-    num, err := scnwm.test("差不多该写好了吧😅")
+    num, err := scnwm.Test("差不多该写好了吧😅")
     if err != nil {
         fmt.Println(err)
     }
