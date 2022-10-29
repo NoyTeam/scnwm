@@ -34,6 +34,16 @@ var words map[string]int8 = map[string]int8{
 	"弱智": 10,
 	"残疾": 10,
 	"😅":  10,
+	"自由": 10,
+	// 15
+	"革命":  15,
+	"退党":  15,
+	"共产党": 15,
+	"近平":  15,
+	"政府":  15,
+	"独裁":  15,
+	"中共":  15,
+	"法轮":  15,
 }
 
 var pinyins []string = []string{
@@ -43,6 +53,9 @@ var pinyins []string = []string{
 	"sb",
 	"shabi",
 	"nt",
+	"gongchan",
+	"ducai",
+	"xjp",
 }
 
 func Test(text string) (int, error) {
