@@ -7,7 +7,7 @@ import (
 	"github.com/mozillazg/go-pinyin"
 )
 
-var words map[string]int8 = map[string]int8{
+var words map[string]int = map[string]int{
 	// 3
 	"差不多": 3,
 	"狗":   3,
@@ -47,19 +47,20 @@ var words map[string]int8 = map[string]int8{
 }
 
 var pinyins []string = []string{
-	"nima",
-	"made",
+	"ni ma",
+	"ma de",
 	"tmd",
 	"sb",
-	"shabi",
+	"sha bi",
 	"nt",
-	"gongchan",
-	"ducai",
+	"gong chan",
+	"du cai",
 	"xjp",
+	"jin ping",
 }
 
 func Test(text string) (int, error) {
-	var num int8 = 0
+	var num int = 0
 
 	// GOCC
 	t2s, err := gocc.New("t2s")
@@ -87,7 +88,7 @@ func Test(text string) (int, error) {
 
 		var pinyintext string
 		for _, j := range pinyinlist {
-			pinyintext = pinyintext + j[0]
+			pinyintext = pinyintext + " " + j[0]
 		}
 
 		for _, j := range pinyins {
@@ -97,5 +98,5 @@ func Test(text string) (int, error) {
 		}
 	}
 
-	return int(num), nil
+	return num, nil
 }

@@ -7,7 +7,7 @@
 ## Install
 
 ```
-go get github.com/NoyTeam/scnwm@v1.0.4
+go get github.com/NoyTeam/scnwm@v1.0.5
 ```
 
 ## Use
